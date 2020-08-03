@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/myInfo/index",
     "pages/index/index"
   ],
   "window": {
@@ -8,6 +9,19 @@
     "navigationBarTitleText": "ColorUI",
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的订阅"
+      },
+      {
+        "pagePath": "pages/myInfo/index",
+        "text": "我的"
+      }
+    ]
   },
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom"

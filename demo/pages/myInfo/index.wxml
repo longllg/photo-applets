@@ -1,0 +1,107 @@
+  <View>
+    <View class="header">
+      <View class="header-info">
+        <View class="avatar" hover-class="none" hover-stop-propagation="false">
+          <open-data type="userAvatarUrl"/>
+        </View>
+        <View class="nickName" hover-class="none" hover-stop-propagation="false">
+          <open-data type="userNickName"/>
+        </View> 
+      </View>
+    </View>
+    <View >
+      <View class="cu-bar bg-white solid-bottom margin-top">
+        <View class="action">
+          <text class="cuIcon-titles lg text-green"></text>个人
+        </View>
+      </View>
+      <View class="cu-list menu">
+        <View onClick="to('fav')" class="cu-item arrow">
+          <View class="content">
+            <text class="cuIcon-favor lg text-gray"></text>
+            <text class="text-grey">本地收藏</text>
+          </View>
+        </View>
+     
+        <View   onClick="to('footprint')" class="cu-item arrow">
+          <View class="content">
+            <text class="cuIcon-footprint lg text-gray"></text>
+            <text class="text-grey">浏览足迹</text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View >
+      <View class="cu-bar bg-white solid-bottom margin-top">
+        <View class="action">
+          <text class="cuIcon-titles lg text-green"></text>备份
+        </View>
+      </View>
+      <View class="cu-list menu">
+        <View onClick="importConfig" class="cu-item arrow">
+          <View class="content">
+            <text class="cuIcon-down lg text-gray"></text>
+            <text class="text-grey">导入订阅</text>
+          </View>
+        </View>
+        <View onClick="exportConfig" class="cu-item arrow">
+          <View class="content">
+            <text class="cuIcon-upload lg text-gray"></text>
+            <text class="text-grey">导出订阅</text>
+          </View>
+        </View>
+      </View>
+    </View>
+
+    <View class="margin-bottom">
+      <View class="cu-bar bg-white solid-bottom margin-top">
+        <View class="action">
+          <text class="cuIcon-titles lg text-green"></text>系统
+        </View>
+      </View>
+      <View class="cu-list menu">
+         <button open-type="contact" class="cu-item text-left arrow">
+          <View class="content">
+            <text class="cuIcon-servicefill lg text-gray"></text>
+            <text class="text-grey">联系客服</text>
+          </View>
+        </button>
+        <button open-type="openSetting" class="cu-item text-left arrow">
+          <View class="content">
+            <text class="cuIcon-settings lg text-gray"></text>
+            <text class="text-grey">设置权限</text>
+          </View>
+        </button>
+         <button open-type="feedback" class="cu-item text-left arrow">
+          <View class="content">
+            <text class="cuIcon-community lg text-gray"></text>
+            <text class="text-grey">问题反馈</text>
+          </View>
+        </button>
+         <button  open-type="share" class="cu-item text-left arrow">
+          <View class="content">
+            <text class="cuIcon-share lg text-gray"></text>
+            <text class="text-grey">推荐给朋友</text>
+          </View>
+        </button>
+        <View onClick="clearCache" class="cu-item arrow">
+          <View class="content">
+            <text class="cuIcon-exit lg text-gray"></text>
+            <text class="text-grey">清除缓存</text>
+          </View>
+        </View>
+         <View onClick="goPackage('update')" class="cu-item arrow">
+          <View class="content">
+            <text class="cuIcon-newshot lg text-gray"></text>
+            <text class="text-grey">更新历史</text>
+          </View>
+        </View>
+        <View onClick="goPackage('about')" class="cu-item arrow">
+          <View class="content">
+            <text class="cuIcon-hot lg text-gray"></text>
+            <text class="text-grey">关于</text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
